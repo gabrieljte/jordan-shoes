@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+:root {
+    font-size: 10px;
+    font-family: Montserrat, sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#discount-featured {
+    width: 100%;
+    height: 60px;
+    background-color: #181818;
+    display: flex;
+    color: #F9F9F9;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#logo-centered {
+    width: 100%;
+    height: 60px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.opacity-rec {
+    width: 100%;
+    height: 378px;
+    background: #181818;
+    opacity: 0.6;
+    position: absolute;
+}
+
+#banner-img {
+    width: 100%;
+    height: 378px;
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    background-image: url(imgs/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1\ banner.png);
+    background-position: center;
+    color: #F9F9F9;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#h1-banner {
+    font-size: 2.4rem;
+    padding-bottom: 19px;
+    font-weight: 700;
+    height: 39px;
+}
+
+#text-space {
+    position: absolute;
+    padding-left: 100px;
+    max-width: 600px;
+}
+
+/* main content */
+
+#main-content-featured {
+    padding-top: 58px;
+    width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #181818;
+}
+
+#sub-h1 {
+    padding-top: 10px;
+    font-size: 1.8rem;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    color: #474747;
+}
+
+#store-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.square {
+    width: 20%;
+    margin: calc(20%/16);
+    height: 302px;
+    background-color: #EBE9EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square>img:hover {
+    transform: scale(1.15);
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>p {
+    color: #F9F9F9;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 720px) {
+    #discount-featured {
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    #logo-centered {
+        width: 100%;
+    }
+
+    #banner-img {
+        width: 100%;
+        font-size: 1.6rem;
+        height: 377px;
+        justify-content: center;
+    }
+
+    #h1-banner {
+        font-size: 2.8rem;
+        padding-bottom: 12px;
+    }
+
+    #text-space {
+        padding-left: 20px;
+    }
+
+    #main-content-featured {
+        font-size: 2.8rem;
+    }
+
+    #sub-h1 {
+        padding-top: 5px;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #store-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .square {
+        width: 90%;
+    }
+}
+
